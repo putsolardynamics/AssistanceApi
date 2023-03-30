@@ -2,7 +2,6 @@
 using RestApiTemplate.Infrastructure.Persistence;
 using RestApiTemplate.WebUI.Filters;
 using RestApiTemplate.WebUI.Services;
-using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Microsoft.Extensions.DependencyInjection;
@@ -19,8 +18,6 @@ public static class ConfigureServices
 
         services.AddHealthChecks()
             .AddDbContextCheck<ApplicationDbContext>();
-
-        services.AddRazorPages();
 
         // Customise default API behaviour
         services.Configure<ApiBehaviorOptions>(options =>

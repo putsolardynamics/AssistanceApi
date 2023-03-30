@@ -50,8 +50,6 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-app.MapRazorPages();
-
 app.MapFallbackToFile("index.html");
 
 await app.RunAsync();

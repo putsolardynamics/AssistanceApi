@@ -5,7 +5,7 @@ namespace RestApiTemplate.Application.Common.Interfaces;
 
 public interface IApplicationDbContext
 {
-    DbSet<GeoPosition> TodoLists { get; }
+    DbSet<GeoPosition> GeoPositions { get; }
     
     Task<int> SaveChangesAsync(CancellationToken cancellationToken);
 }

@@ -27,7 +27,7 @@ public class ApplicationDbContext : ApiAuthorizationDbContext<ApplicationUser>, 
         _auditableEntitySaveChangesInterceptor = auditableEntitySaveChangesInterceptor;
     }
 
-    public DbSet<GeoPosition> TodoLists => Set<GeoPosition>();
+    public DbSet<GeoPosition> GeoPositions => Set<GeoPosition>();
     
     protected override void OnModelCreating(ModelBuilder builder)
     {

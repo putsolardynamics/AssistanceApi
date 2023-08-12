@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace RestApiTemplate.WebUI.Controllers;
 
+[ApiExplorerSettings(IgnoreApi = true)]
 public class WeatherForecastController : ApiControllerBase
 {
     [HttpGet]

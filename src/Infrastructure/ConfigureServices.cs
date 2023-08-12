@@ -1,5 +1,4 @@
 ﻿using RestApiTemplate.Application.Common.Interfaces;
-using RestApiTemplate.Infrastructure.Files;
 using RestApiTemplate.Infrastructure.Identity;
 using RestApiTemplate.Infrastructure.Persistence;
 using RestApiTemplate.Infrastructure.Persistence.Interceptors;
@@ -43,7 +42,6 @@ public static class ConfigureServices
 
         services.AddTransient<IDateTime, DateTimeService>();
         services.AddTransient<IIdentityService, IdentityService>();
-        services.AddTransient<ICsvFileBuilder, CsvFileBuilder>();
 
         services.AddAuthentication();
 

@@ -1,3 +1,6 @@
+# Api for assistance for driver using Clean Web Api Architecture
+Api is build for educational purposes. Its' functionalities are built primarly to act as independant actor which is saving data and is aiding frontend apps with necessary data to display.
+
 # Clean Web API template (ASP .NET Core)
 Simple clean web API template with setup for postgresql. Template is using:
 - Entity Framework with Postgresql
